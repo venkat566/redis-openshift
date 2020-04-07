@@ -15,6 +15,9 @@
 # limitations under the License.
 systemctl start redis
 systemctl enable redis
+systemctl status redis
+
+echo "testing redis"
 
 function launchmaster() {
   if [[ ! -e /redis-master-data ]]; then
